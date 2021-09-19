@@ -6,28 +6,52 @@
 
 -----
 
-### <p align="center">🌍 Title 🌍</p>
+### <p align="center">🐱‍👤 Hades 🐱‍👤</p>
 
 <br><br>
 <p align="center">
 <strong>
-text
+Hades is a tool allowing you to bruteforce or phish VMware Horizon
 <br>
-text
+accounts easily, written in Python.
 </strong>
 </p>
 <br>
 
 -----
 
+### <p align="center">📚 Documentation 📚</p>
+
+<p align="center"><strong><i>If you encounter any problems while using the script, create an issue on this repository and I will help you.</i></strong</p>
+
+<br><br>
+First of all, you have to install Python3 AND 'pip'. Then run the `setup.bat` file.
+It will install you the necessary libraries for the program.  
+  
+Hades contains two folders:
+  - Phishing
+  - Bruteforce
+  
+1: Phishing
+The phishing program will open a HTTP server with the phihing VMware Horizon page.
+You can open your ports or make a localtunnel to make the web server accessible to anyone.
+When someone will enter his credentials and connect in the phishing page, the information
+will be stocked in a file and sent to your discord webhook.
+  
+2: Bruteforce
+...
+<br><br>
+
+-----
+
 ### <p align="center">⭐ Features ⭐</p>
 
 <br><br>
-<strong>+ plus</strong>
+<strong>+ Fast and well optimized</strong>
 <br>
-<strong>+ plus</strong>
+<strong>+ Good phishing page</strong>
 <br>
-<strong>+ plus</strong>
+<strong>+ Send logs on your Discord webhook</strong>
 <br>
 
 <p align="right">
@@ -35,11 +59,9 @@ text
 </p>
 
 <br>
-<strong>- minus</strong>
+<strong>- Pretty hard to setup</strong>
 <br>
-<strong>- minus</strong>
-<br>
-<strong>- minus</strong>
+<strong>- You have to use a vpn, since the bruteforce doesn't use proxies for the requests</strong>
 <br><br>
 
 -----
@@ -49,8 +71,7 @@ text
 <p align="center"><strong><i>Feel free to make a pull request on this repository to submit any idea!</i></strong</p>
 
 <br><br>
-* idea
-* idea
+* Add proxys
 <br><br>
 
 -----
