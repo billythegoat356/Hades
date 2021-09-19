@@ -6,7 +6,7 @@
 
 -----
 
-### <p align="center">🐱‍👤 Hades 🐱‍👤</p>
+### <p align="center">🥷 Hades 🥷</p>
 
 <br><br>
 <p align="center">
@@ -71,7 +71,7 @@ will be stocked in a file and sent to your discord webhook.
 <p align="center"><strong><i>Feel free to make a pull request on this repository to submit any idea!</i></strong</p>
 
 <br><br>
-* Add proxys
+* Add proxys for the bruteforcer
 <br><br>
 
 -----
