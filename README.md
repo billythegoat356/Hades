@@ -22,9 +22,12 @@ accounts easily, written in Python3.
 
 ### <p align="center">📚 Documentation 📚</p>
 
-<p align="center"><strong><i>If you encounter any problems while using the script, create an issue on this repository and I will help you.</i></strong</p>
+<p align="center"><strong><i>If you encounter any problems while using the script, create an issue on this repository and I will help you.
+<br>
+Also, please use this Program only for educational purposes, and don't forget; greate power comes with great responsibility.</i></strong</p>
 
 <br><br>
+
 First of all, you have to install Python3 AND 'pip'. Then run the `setup.bat` file.
 It will install you the necessary libraries for the program.  
   
@@ -45,8 +48,7 @@ The bruteforce part will be a little more complexe, but more customizable.
 Hades will ask for your school VMware domain, then for the url of the school's VMware website.
 After, you will have to enter the username of the victim's VMware account, and your discord webhook.
 Finally, you just have to turn on a VPN and the program will start bruteforcing the VMware account.
-
-* Please use this only for educational purposes
+ 
 <br><br>
 
 -----
