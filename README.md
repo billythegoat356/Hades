@@ -89,7 +89,7 @@ Finally, you just have to turn on a VPN and the program will start bruteforcing 
 <p align="center"><strong><i>Feel free to make a pull request on this repository to submit any idea!</i></strong</p>
 
 <br><br>
-* Add proxys for the bruteforcer
+* Add proxies for the bruteforcer
 <br><br>
 
 -----
