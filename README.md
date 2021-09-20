@@ -6,7 +6,7 @@
 
 -----
 
-### <p align="center">🥷 Hades 🥷</p>
+### <p align="center">🐱‍👤 Hades 🐱‍👤</p>
 
 <br><br>
 <p align="center">
