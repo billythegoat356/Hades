@@ -43,15 +43,21 @@ Hades contains two folders:
   - Bruteforce
   
 1: Phishing
-<br>
+<p align="center">
+<img src="https://cdn.discordapp.com/attachments/882652381731504182/889591987769053244/unknown.png", width="500", height="500">  
+</p>
 The phishing program will open a HTTP server with the phishing VMware Horizon page.
 You can open your ports or make a localtunnel to make the web server accessible to anyone.
 When someone will enter his credentials and connect in the phishing page, the information
 will be stocked in a file and sent to your discord webhook.
-  
+
+<br><br>
+ 
 2: Bruteforce
-<br>
-The bruteforce part will be a little more complexe, but more customizable.
+<p align="center">
+<img src="https://cdn.discordapp.com/attachments/882652381731504182/889592275250868275/unknown.png", width="1000", height="1000">  
+</p>
+The bruteforce part is a little more complexe, but more customizable.
 Hades will ask for your school VMware domain, then for the url of the school's VMware website.
 After, you will have to enter the username of the victim's VMware account, and your discord webhook.
 Finally, you just have to turn on a VPN and the program will start bruteforcing the VMware account.
