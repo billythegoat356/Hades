@@ -22,7 +22,7 @@ accounts easily, written in Python3.
 
 ### <p align="center">📚 Documentation 📚</p>
 
-<p align="center"><strong><i>If you encounter any problem while using the script, create an issue on this repository and I will help you.
+<p align="center"><strong><i>If you encounter any problem while using this program, create an issue on this repository and I will help you.
 <br>
 Also, please use this program only for educational purposes, and don't forget; great power comes with great responsibility.</i></strong</p>
 
