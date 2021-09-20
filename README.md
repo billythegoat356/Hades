@@ -24,8 +24,15 @@ accounts easily, written in Python3.
 
 <p align="center"><strong><i>If you encounter any problem while using this program, create an issue on this repository and I will help you.
 <br>
-Also, please use this program only for educational purposes, and don't forget; great power comes with great responsibility.</i></strong</p>
+Also, please use this program only for educational purposes, and don't forget; great power comes with great responsibility.</i></strong
+</p>
+ 
+<br><br>
 
+<p align="center">
+<img src="https://cdn.discordapp.com/attachments/889258352587186256/889552968830025798/unknown.png", width="500", height="500">  
+</p>
+  
 <br><br>
 
 First of all, you have to install Python3 AND 'pip'. Then run the `setup.bat` file.
