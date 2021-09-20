@@ -1,7 +1,7 @@
 -----
 
 <p align="center">
-<img src="link", width="500", height="500">
+<img src="https://repository-images.githubusercontent.com/407786206/3e37b6ce-e16c-4f0e-8713-c6cbf1d6b22a", width="500", height="500">
 </p>
 
 -----
@@ -66,7 +66,7 @@ Finally, you just have to turn on a VPN and the program will start bruteforcing 
 <br>
 
 <p align="right">
-<img src="link" width="250", height="250">
+<img src="https://repository-images.githubusercontent.com/407786206/3e37b6ce-e16c-4f0e-8713-c6cbf1d6b22a" width="250", height="250">
 </p>
 
 <br>
