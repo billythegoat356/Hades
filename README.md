@@ -13,7 +13,7 @@
 <strong>
 Hades is a tool allowing you to bruteforce or phish VMware Horizon
 <br>
-accounts easily, written in Python.
+accounts easily, written in Python3.
 </strong>
 </p>
 <br>
@@ -33,13 +33,20 @@ Hades contains two folders:
   - Bruteforce
   
 1: Phishing
-The phishing program will open a HTTP server with the phihing VMware Horizon page.
+<br>
+The phishing program will open a HTTP server with the phishing VMware Horizon page.
 You can open your ports or make a localtunnel to make the web server accessible to anyone.
 When someone will enter his credentials and connect in the phishing page, the information
 will be stocked in a file and sent to your discord webhook.
   
 2: Bruteforce
-...
+<br>
+The bruteforce part will be a little more complexe, but more customizable.
+Hades will ask for your school VMware domain, then for the url of the school's VMware website.
+After, you will have to enter the username of the victim's VMware account, and your discord webhook.
+Finally, you just have to turn on a VPN and the program will start bruteforcing the VMware account.
+
+* Please use this only for educational purposes
 <br><br>
 
 -----
@@ -48,6 +55,8 @@ will be stocked in a file and sent to your discord webhook.
 
 <br><br>
 <strong>+ Fast and well optimized</strong>
+<br>
+<strong>+ Easily customizable</strong>
 <br>
 <strong>+ Good phishing page</strong>
 <br>
