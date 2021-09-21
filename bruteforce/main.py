@@ -229,9 +229,17 @@ def main():  # sourcery no-metrics skip: move-assign
     for number in wordlist:
         if cracked:
             break
-        th = Thread(target=crack, args=[number])
-        ths.append(th)
-        th.start()
+
+        while True:
+            if cracked:
+                break
+            try:
+                th = Thread(target=crack, args=[number])
+                ths.append(th)
+                th.start()
+            except:
+                continue
+            break
 
         sleep(interval)
 
