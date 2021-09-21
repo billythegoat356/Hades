@@ -1,9 +1,10 @@
 # Hades
 
-from requests import post
+from requests import get, post
 from threading import Thread
 from time import sleep, time
 from pystyle import Anime, Colorate, Colors, Center, System, Write
+from random import shuffle
 
 
 System.Title('Hades')
@@ -156,6 +157,15 @@ def main():  # sourcery no-metrics skip: move-assign
             url = url.replace(suffix, "")
     url = url.split('/')
     url = "http://" + url[0] + "/broker/xml"
+    try:
+        s = get(url).status_code
+        if s == 404:
+            Colorate.Error("Error! Url is invalid.")
+            return
+    except:
+        Colorate.Error("Error! Url is invalid.")
+        return
+
     domain = Write.Input("Enter your school VMware domain -> ", Colors.red_to_purple, interval=0.0025)
 
     username = Write.Input(
@@ -190,6 +200,13 @@ def main():  # sourcery no-metrics skip: move-assign
 
     logfile = Write.Input("Stock the logs in a file [y/n] -> ", Colors.red_to_purple, interval=0.0025)
     logfile = logfile == "y"
+
+    print()
+
+    shuf = Write.Input("Shuffle the wordlist [y/n] -> ", Colors.red_to_purple, interval=0.0025)
+    
+    if shuf == 'y':
+        shuffle(wordlist)
 
     cracked = False
 
