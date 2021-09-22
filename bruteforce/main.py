@@ -166,7 +166,7 @@ def main():  # sourcery no-metrics skip: move-assign
         Colorate.Error("Error! Url is invalid.")
         return
 
-    domain = Write.Input("Enter your school VMware domain -> ", Colors.red_to_purple, interval=0.0025)
+    domain = Write.Input("Enter VMware domain -> ", Colors.red_to_purple, interval=0.0025)
 
     username = Write.Input(
         "Username -> ", Colors.red_to_purple, interval=0.0025)
