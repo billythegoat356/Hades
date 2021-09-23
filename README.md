@@ -58,7 +58,7 @@ will be stocked in a file and sent to your discord webhook.
 <img src="https://cdn.discordapp.com/attachments/882652381731504182/889592275250868275/unknown.png", width="1000", height="1000">  
 </p>
 The bruteforce part is a little more complexe, but more customizable.
-Hades will ask for your school VMware domain, then for the url of the school's VMware website.
+Hades will ask for your VMware domain, then for the url of the VMware website.
 After, you will have to enter the username of the victim's VMware account, and your discord webhook.
 Finally, you just have to turn on a VPN and the program will start bruteforcing the VMware account.
  
