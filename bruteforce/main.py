@@ -151,7 +151,7 @@ def main():  # sourcery no-metrics skip: move-assign
     print(Colorate.Horizontal(Colors.red_to_purple, Center.XCenter(mode)))
     print('\n'*3)
 
-    url = Write.Input("VMware Url  -> ", Colors.red_to_purple, interval=0.0025)
+    url = Write.Input("VMware Url -> ", Colors.red_to_purple, interval=0.0025)
     for suffix in ("http://", "https://"):
         if url.startswith(suffix):
             url = url.replace(suffix, "")
