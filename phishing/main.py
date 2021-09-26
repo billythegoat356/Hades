@@ -149,7 +149,7 @@ def main():
     if host == '':
         host = "127.0.0.1"
     print()
-    webhook = Write.Input("Enter your webhook (press 'enter' to pass) -> ",
+    webhook = Write.Input("Enter your Discord webhook for logs (press 'enter' to pass) -> ",
                           Colors.red_to_purple, interval=0.0025)
     logfile = Write.Input(
         "Stock the logs in a file [y/n] -> ", Colors.red_to_purple, interval=0.0025)
