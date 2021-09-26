@@ -196,7 +196,7 @@ def main():  # sourcery no-metrics skip: move-assign
 
     wordlist = Make.mkwordlist()
 
-    webhook = Write.Input("Enter your webhook for logs (press 'enter' to pass) -> ", Colors.red_to_purple, interval=0.0025)
+    webhook = Write.Input("Enter your Discord webhook for logs (press 'enter' to pass) -> ", Colors.red_to_purple, interval=0.0025)
 
     logfile = Write.Input("Stock the logs in a file [y/n] -> ", Colors.red_to_purple, interval=0.0025)
     logfile = logfile == "y"
