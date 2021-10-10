@@ -162,7 +162,7 @@ def main():
     print('\n'*2)
     url = f"http://{host}:{port}"
     print(Colorate.Color(Colors.purple,
-          f"   Running on: url))
+          f"   Running on: {url}"))
     start(url)
     app.run(host=host, port=port)
 
