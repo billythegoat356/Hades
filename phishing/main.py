@@ -162,7 +162,7 @@ def main():
     print()
     print(Colorate.Horizontal(Colors.red_to_purple, Center.XCenter(mode)))
     print('\n'*2)
-    url = f"http://{host}:{port}"
+    url = f"http://{host}:{port}/"
     start(url)
     print(Colorate.Color(Colors.purple,
           f"   Running on: {url}"))
