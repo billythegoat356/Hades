@@ -6,7 +6,7 @@ from flask.globals import request
 from requests import post
 from datetime import datetime
 from pystyle import Add, Anime, Colorate, Colors, Col, Center, System, Write
-from webbrowser import open as start
+from webbrowser import open_new as start
 
 
 System.Title('Hades')
@@ -136,6 +136,12 @@ def main():
     print()
     print(Colorate.Horizontal(Colors.red_to_purple, Center.XCenter(mode)))
     print('\n'*3)
+
+    host = Write.Input("Enter the host (press 'enter' for '127.0.0.1') -> ",
+                       Colors.red_to_purple, interval=0.0025)
+    if host == '':
+        host = "127.0.0.1"
+        
     port = Write.Input("Enter the port (press 'enter' for '8080') -> ",
                        Colors.red_to_purple, interval=0.0025)
     if port == '':
@@ -145,10 +151,6 @@ def main():
     except ValueError:
         Colorate.Error("Error! Port has to be an integer.")
         return
-    host = Write.Input("Enter the host (press 'enter' for '127.0.0.1') -> ",
-                       Colors.red_to_purple, interval=0.0025)
-    if host == '':
-        host = "127.0.0.1"
     print()
     webhook = Write.Input("Enter your Discord webhook for logs (press 'enter' to pass) -> ",
                           Colors.red_to_purple, interval=0.0025)
@@ -161,9 +163,9 @@ def main():
     print(Colorate.Horizontal(Colors.red_to_purple, Center.XCenter(mode)))
     print('\n'*2)
     url = f"http://{host}:{port}"
+    start(url)
     print(Colorate.Color(Colors.purple,
           f"   Running on: {url}"))
-    start(url)
     app.run(host=host, port=port)
 
 
