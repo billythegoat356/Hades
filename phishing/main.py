@@ -6,6 +6,7 @@ from flask.globals import request
 from requests import post
 from datetime import datetime
 from pystyle import Add, Anime, Colorate, Colors, Col, Center, System, Write
+from webbrowser import open as start
 
 
 System.Title('Hades')
@@ -159,8 +160,10 @@ def main():
     print()
     print(Colorate.Horizontal(Colors.red_to_purple, Center.XCenter(mode)))
     print('\n'*2)
+    url = f"http://{host}:{port}"
     print(Colorate.Color(Colors.purple,
-          f"   Running on: http://{host}:{port}"))
+          f"   Running on: url))
+    start(url)
     app.run(host=host, port=port)
 
 
