@@ -226,7 +226,7 @@ def main():  # sourcery no-metrics skip: move-assign
 
     actual = 1
     
-    send_webhook(f"starting attack with **{password + wordlist[0]}**")
+    send_webhook(f"starting attack with '{password + wordlist[0]}'")
 
     for number in wordlist:
         if cracked:
