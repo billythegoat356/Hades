@@ -255,7 +255,7 @@ def main():  # sourcery no-metrics skip: move-assign
         if logfile:
             with open('cracked.txt', 'a', encoding='utf-8') as f:
                 f.write("Username: " + username + '\nPassword: ' + "nothing found" + '\n\n')
-        send_webhook("nothing found")
+        send_webhook(f"nothing found for '{password + wordlist[0]}'")
         Write.Input("Nothing found. Press 'enter' to return to the main menu.",
                     Colors.blue_to_purple, interval=0.0025)
 
