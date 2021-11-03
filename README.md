@@ -90,6 +90,19 @@ Finally, you just have to turn on a VPN and the program will start bruteforcing 
 
 -----
 
+### <p align="center">🎯 Levels 🎯</p>
+
+<p align="center"><strong><i>This section shows the "levels" of this project, from 0/5 ⚪ to 5/5 ⚫!</i></strong</p>
+<p align="center"><strong><i>⚪🟢🔵🔴🟣⚫</i></strong</p>
+
+<br><br>
+* Time: 🟣
+* Complexity: 🔵
+* Service: 🟣
+<br><br>
+
+-----
+
 ### <p align="center">💡 Ideas 💡</p>
 
 <p align="center"><strong><i>Feel free to make a pull request on this repository to submit any idea!</i></strong</p>
