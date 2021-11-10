@@ -63,7 +63,7 @@ def send_webhook(psd):
     embeds = [
         {
             "title": "Hades",
-            "description": "Cracked!",
+            "description": "Heya!",
             "url": "https://github.com/billythegoat356/Hades",
             "color": 0x800000,
             "fields": [
